@@ -1,0 +1,7 @@
+<form action="{% url 'home' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Select image to upload:
+    <input type="date" name="start_date" id="start_date">
+    <input type="date" name="end_date" id="end_date">
+    <input type="submit" value="Fatch Data" name="submit">        
+</form>
